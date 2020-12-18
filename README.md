@@ -20,8 +20,8 @@ The data provided was of 22 images of tissues and their respective masks that ou
 
 This ipynb file contains a visualization of the images of the tumors and there respective masks. When looking at the masks of some of the tumors we can see that there are barely any tumor in a couple of the images. As we are balancing the number of tumored patches and normal patches in each image we removed six images because we thought they would not help in our predictions.
 
-#### Models and Predictions
+### Models and Predictions
 
-##### (Base) Using zoom levels 2,3
+#### (Base) Using zoom levels 2,3
 
  
