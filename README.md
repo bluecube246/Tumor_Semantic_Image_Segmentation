@@ -22,6 +22,6 @@ This ipynb file contains a visualization of the images of the tumors and there r
 
 #### Models and Predictions
 
-### (Base) Using zoom levels 2,3
+##### (Base) Using zoom levels 2,3
 
  
