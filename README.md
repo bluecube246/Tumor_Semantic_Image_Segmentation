@@ -11,7 +11,7 @@ Notes for later:
 
 ## Methodology
 
-The data for the model needs to be gathered from the initial 21 different tissue images. We will iterate the entire image with a predefined stride. Starting with the top right corner patches of size (299*299*3) are collected by a moving window. A lot of the patches only contain only a small proportion of tissue so we will be getting rid of those patches using a given percentage. The center region of size (128*128) of each patch will determine it’s label. If there is at least one pixel of tumor detected in the center region, the label of that patch will be labeled as 0 (Tumor) otherwise (Normal). 
+The data for the model needs to be gathered from the initial 21 different tissue images. We will iterate the entire image with a predefined stride. Starting with the top right corner patches of size (299\*299\*3) are collected by a moving window. A lot of the patches only contain only a small proportion of tissue so we will be getting rid of those patches using a given percentage. The center region of size (128*128) of each patch will determine it’s label. If there is at least one pixel of tumor detected in the center region, the label of that patch will be labeled as 0 (Tumor) otherwise (Normal). 
 
 Moving window - stride
 Tissue percentage filter
