@@ -34,8 +34,8 @@ With initial visual inspection of the images, we further decided to not use 6 of
  We further selected images that goes into train/val/test set such that 'good' biopsy and mask images are distributed more toward training set and test set (i.e. put rather 'poor' images in validation set since the set is used only for validation, and our goal is to have best prediction on the test set as much as we can). To make sure the model works on both images that have a lot of tumor and ones that don’t we made sure that both types of images were included in the test set. Image 78 was chosen because there were a lot of tumors in the image where image 64 and 91 were chosen because they had small but not tiny amounts of tumor in the image. 
 
 Biopsy/mask img number in 
-train set: [5, 16, 19, 23, 31, 84, 94, 101, 110] <br />
-valid set: [1, 75, 96] <br />
+train set: [5, 16, 19, 23, 31, 84, 94, 101, 110]
+valid set: [1, 75, 96]
 test set: [64, 78, 91]
 
 Image numbers 64, 78, 91 were used as the testing set. Although the zoom levels that were used were the same, the size of the images were all different. Image 64 was the biggest image and Image 78 was about half the size of image 64. Image 91 was around three times smaller compared to image 78. As Image 78 has the second largest amount of patches, we will use this as a reference to how much patches are used for prediction for each example.  
@@ -86,9 +86,8 @@ Unfortunately, for this example we were no longer able to use Image 11 due to me
 
 ### Using Zoom levels 0,1
 
-## Conclusion
+# Conclusion
 
 In conclusion, we believe that the results depend mostly on the resolution of the images and what images we select for the train, test, valid sets. We could observe that the predictions vary on whether the image has a large amount of tumor patches or a small number of tumor patches. The zoom level was also a big factor in the quality of the predictions. The minimum highest zoom level that could predict a decent enough result seemed to be level 4 as it was difficult to extract too many patches from higher zoom levels (i.e. analyzing 3,4,5 did not provide predictions that are good enough). Creating different models by adding features such as data augmentation and more dense layers didn’t help out as much as we wanted it to. The only factor that helped out the model in most cases was the addition of a batch normalization layer.
 
 A potential problem with our evaluation is that the images are not from the same distribution. There were only a few images that had a large percentage of tumors and most of these images were used in the train/test sets. This could be the reason why the validation accuracy only comes out to be 60 percent when the test accuracy often comes out to be much higher. The lack of variety of the tissue images could also be the main reason the models fall short. 
-
