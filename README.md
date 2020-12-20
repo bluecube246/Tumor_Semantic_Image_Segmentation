@@ -28,7 +28,7 @@ Note: When analyzing zoom levels 0,1, we decided to further decrease samples use
 
 ## 3.Methodology 
 ### 3.a. Sliding window approach
-For each biopsy and mask slides in the training set, we first tried to create patches. We decided to adopt a **sliding-window** method such that with a given hyper-parameter of **stride** size (ex. 299),  biopsy slide,  and mask slide of a certain image number, we create a list of patches from top to bottom of image, and from left to right starting from top (i.e. starts from top-left, ends at bottom-left side of a slide).
+For each biopsy and mask slides in the training set, we first tried to create patches. We decided to adopt a sliding-window method such that with a given hyper-parameter of stride size (ex. 299),  biopsy slide,  and mask slide of a certain image number, we create a list of patches from top to bottom of image, and from left to right starting from top (i.e. starts from top-left, ends at bottom-left side of a slide).
 
 ### 3.b. Minimum tissue percentage 
 However, since we could not store all the patches in this basic method in RAM provided even in Google Colab Pro version when we look in to relatively lower slide (i.e. as the slide’s level decreases, more resolution, thus bigger image size), we adopted to apply filtering process of taking only patches that have higher tissue percentage than a predefined **minimum percentage of tissue** in a biopsy image (ex. 50%).  
