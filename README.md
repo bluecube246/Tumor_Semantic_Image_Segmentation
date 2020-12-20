@@ -34,8 +34,8 @@ With initial visual inspection of the images, we further decided to not use 6 of
  We further selected images that goes into train/val/test set such that 'good' biopsy and mask images are distributed more toward training set and test set (i.e. put rather 'poor' images in validation set since the set is used only for validation, and our goal is to have best prediction on the test set as much as we can). To make sure the model works on both images that have a lot of tumor and ones that don’t we made sure that both types of images were included in the test set. Image 78 was chosen because there were a lot of tumors in the image where image 64 and 91 were chosen because they had small but not tiny amounts of tumor in the image. 
 
 Biopsy/mask img number in 
-train set: [5, 16, 19, 23, 31, 84, 94, 101, 110] \n
-valid set: [1, 75, 96]
+train set: [5, 16, 19, 23, 31, 84, 94, 101, 110] <br />
+valid set: [1, 75, 96] <br />
 test set: [64, 78, 91]
 
 Image numbers 64, 78, 91 were used as the testing set. Although the zoom levels that were used were the same, the size of the images were all different. Image 64 was the biggest image and Image 78 was about half the size of image 64. Image 91 was around three times smaller compared to image 78. As Image 78 has the second largest amount of patches, we will use this as a reference to how much patches are used for prediction for each example.  
