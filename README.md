@@ -5,7 +5,7 @@ Columbia University - Applied Deep Learning Project
 Jinwoo Jung (jj2762@columbia.edu), Hyuk Joon Kwon (hk3084@columbia.edu)
 
 
-Note: since github does not allow us to upload large models' weights, please refer below to the Google Drive folder, where it stores all the models' weights
+Note: since Github does not allow us to upload large models' weights, please refer below to the Google Drive folder, where it stores all the models' weights
 https://drive.google.com/drive/folders/1lmVjm3oOQfN7WMPWJKgClInr61icEfPJ?usp=sharing
 
 Also, here is the Youtube video's url:   https://youtu.be/_Jp5uEGGqG0
