@@ -5,6 +5,12 @@ Columbia University - Applied Deep Learning Project
 Jinwoo Jung (jj2762@columbia.edu), Hyuk Joon Kwon (hk3084@columbia.edu)
 
 
+Note: since github does not allow us to upload large models' weights, please refer below to the Google Drive folder, where it stores all the models' weights
+https://drive.google.com/drive/folders/1lmVjm3oOQfN7WMPWJKgClInr61icEfPJ?usp=sharing
+
+Also, here is the Youtube video's url:   https://youtu.be/_Jp5uEGGqG0
+
+
 ## 1. Project Overview and Objective
 This project is to build a tool that produces heatmaps that identify regions of tumors in tissues of biopsy images that works as an automatic second opinion for pathologists. The provided sample datasets are originally from CAMELYON16  Challenge’s 400 WSI( whole slide images), which are collected independently from two medical centers in the Netherlands.
 
